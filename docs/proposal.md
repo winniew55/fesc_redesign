@@ -54,10 +54,18 @@ The website has two navigation bars, one on the top of the page and one on the s
 Device support necessary
 
 It is important to have the website to support different sizes such as desktop, laptop, mobile and tablet. The website has many academics articles so professional could be seeking for opportunity to corporate and students are using the website for education purpose. They are more likely to access the website using desktop or laptop.  The population of using mobile devices is growing and there are various sizes of mobile and tablet. Potential customers and researchers could be access the website on mobile or tablet.
+<<<<<<< HEAD
+=======
+
+>>>>>>> third commit
 
 Recommendations for improvement
 
 1.	Resign the website to be both desktop and mobile friendly and responsive to devices' sizes
 2.	Resign the website to be more ease to use, such as having constant navigation bar
 3.	Revise HTML, CSS and JavaScript errors, such as adding "alt" attributes for every image element
+<<<<<<< HEAD
 4.	Improve color scheme
+=======
+4.	Improve color scheme
+>>>>>>> third commit
