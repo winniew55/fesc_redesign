@@ -1,12 +1,7 @@
-$body: #FFF3E5;
-$nav:#C68175;
-$main:#f7f7f7;
-$university:#F0F0EF;
-$font1: 'Bree Serif', serif;
-$font2: 'Josefin Sans', sans-serif;
-$font3:'Roboto Slab', serif;
-$fontcolor1:#F2F2F2;
-$fontcolor2:#191919;
+@import 'globals/colors';
+@import 'globals/typography';
+@import 'components/footer';
+
   
 html {
   font-family: $font3;
@@ -30,8 +25,8 @@ header{
   a{
     color: $fontcolor1;
     text-decoration: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
   
   &:hover {
   color:#9ecba8;
@@ -83,10 +78,13 @@ article{
   
   .research{
     width:60%;
+    margin: auto;
+    padding-left: 5vh;
   }
   
   .map{
-    width:90%;
+    width:80%;
+    padding-left: 5vh;
   }
   .person{
     width:60%;
@@ -97,12 +95,16 @@ article{
     text-align: center;
   }
   
+  textarea{
+    max-width: 70%;
+  }
+  
   fieldset{
     width:40%;
     margin:auto;
  }
   .center{
-    padding-left: 10%;
+    padding-left: 5%;
   }
 }
 
@@ -117,45 +119,15 @@ aside{
   }
   
    div[class^="col span_1_of_6"]{
-     border-style: solid;
-     border-color:$university;
-      border-width:0.1vh;
-     text-align: center;
+    border-style: solid;
+    border-color:$university;
+    border-width:0.1vh;
+    text-align: center;
     border-radius: 1rem;
     background-color: $university;
+    margin-right: 0;
     }
   
-}
-
-footer{
-  background-color: $nav;
-  font-family: $font1;
-  padding:1rem;
-  
-    h6{
-    margin: 0;
-    }
-
-  .fab{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  
-    }
-    nav {
-    list-style: none;
-  
-    a{
-    color: $fontcolor1;
-    text-decoration: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  
-  &:hover {
-  color:#9ecba8;
-  transition: all 2s ease 0s;
-      }
-    }
-  }
 }
 
 
