@@ -1,0 +1,27 @@
+header{
+  background-color: $nav;
+  font-family: $font2;
+  padding: 1rem;
+  
+  .fab{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  nav {
+    text-align: left;
+    list-style: none;
+  
+  a{
+    color: $fontcolor1;
+    text-decoration: none;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  
+  &:hover {
+  color:#9ecba8;
+  transition: all 2s ease 0s;
+      }
+    }
+  }
+}

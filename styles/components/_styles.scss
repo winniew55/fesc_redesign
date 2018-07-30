@@ -1,0 +1,26 @@
+html {
+  font-family: $font3;
+  background-color: #f7f7f7;
+}
+
+article{
+  
+  h2{
+  text-align: center;
+    font-size: 3vh;
+}
+  h4{
+    padding-left: 1rem;
+  }
+
+  p{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width:768px) {
+html {
+  width:100%;
+  }
+}

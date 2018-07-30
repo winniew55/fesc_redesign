@@ -1,0 +1,20 @@
+aside{
+  background-color: $body;
+  font-family: $font2;
+  
+  form{
+    font-size:3vh;
+    margin:2rem;
+  }
+  
+   div[class^="col span_1_of_6"]{
+    border-style: solid;
+    border-color:$university;
+    border-width:0.1vh;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: $university;
+    margin-right: 0;
+    }
+  
+}

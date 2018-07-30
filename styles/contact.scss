@@ -1,0 +1,40 @@
+@import 'globals/colors';
+@import 'globals/typography';
+@import 'components/header';
+@import 'components/section';
+@import 'components/aside';
+@import 'components/footer';
+@import 'components/grid';
+@import 'components/styles';
+
+article{
+  
+  h3{
+    padding-left: 1rem;
+  }
+  
+  .map{
+    width:80%;
+    padding-left: 5vh;
+  }
+  .person{
+    width:60%;
+    padding-left: 10%;
+  }
+  
+  form{
+    text-align: center;
+  }
+  
+  textarea{
+    max-width: 70%;
+  }
+  
+  fieldset{
+    width:40%;
+    margin:auto;
+ }
+  .center{
+    padding-left: 5%;
+  }
+}
