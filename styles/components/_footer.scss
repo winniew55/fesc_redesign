@@ -1,29 +1,41 @@
 footer{
   background-color: $nav;
-  font-family: $font1;
-  padding:1rem;
+  font-family: $font2;
+  //padding: 1rem;
   
-    h6{
+  h6{
     margin: 0;
+    padding-left: 1vh;
     }
-
-  .fab{
-    padding-left: 2rem;
-    padding-right: 2rem;
   
-    }
-    nav {
+  .fab{
+    padding-left: 2vh;
+    padding-right: 2vh;
+    text-align: center;
+    
+  }
+  
+  form{
+    text-align: center;
+  }
+  
+  nav {
+    text-align: left;
     list-style: none;
   
-    a{
+  a{
     color: $fontcolor1;
+    text-align: center;
     text-decoration: none;
-    padding-left: 1.5rem;
-    padding-right: 1rem;
+    display: inline-block;
+    padding: 3vh;
+    
   
   &:hover {
-  color:#9ecba8;
-  transition: all 2s ease 0s;
+    background-color: $highlight;
+    color:$hover;
+    transition: all 2s ease 0s;
+    text-decoration:none;
       }
     }
   }
