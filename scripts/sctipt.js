@@ -1,4 +1,13 @@
-google.charts.load('current', {'packages':['corechart','bar']});
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+      google.charts.load('current', {'packages':['corechart','bar']});
       google.charts.setOnLoadCallback(drawProductionChart);
       google.charts.setOnLoadCallback(drawConsumptionChart);
       
@@ -68,8 +77,6 @@ google.charts.load('current', {'packages':['corechart','bar']});
 
         
         var options = {'title':'Annual renewable energy production in Florida',
-                       'width':450,
-                       'height':350,
                        legend: { position: 'bottom' },
                         vAxis: {title: "Billion Btu"},
                        hAxis: {title: "Year"},
@@ -146,8 +153,6 @@ function drawConsumptionChart() {
         ]);
 
         var options = {title:'Annual total electricity consumption in Florida',
-                       width:450,
-                       height:350,
                        legend: { position: 'bottom' },
                         vAxis: {title: "Billion Btu"},
                        hAxis: {title: "Year"},
@@ -163,7 +168,9 @@ var chart = new google.visualization.ColumnChart(document.getElementById('chart-
 }
 
 function resize () {
-    chart.draw(data, options);
+   drawConsumptionChart();
+   drawProductionChart();
+  console.log("test")
 }
 if (window.addEventListener) {
     window.addEventListener('resize', resize);
