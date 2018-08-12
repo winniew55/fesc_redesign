@@ -5,6 +5,7 @@ aside{
   form{
     font-size:3vh;
     margin:2rem;
+    max-width: 90%;
   }
   
   img {
@@ -12,15 +13,17 @@ aside{
     height: auto;
 }
   
-   div[class^="col span_1_of_6"]{
+   div[class^="col-lg-2 col-md-3 col-sm-4 col-xs-12"]{
     border-style: solid;
     border-color:$university;
-    border-width:0.1vh;
+    border-width:0.5vh;
     text-align: center;
     border-radius: 1rem;
     background-color: $university;
-    margin-right: 0;
      margin-top: 1rem;
+     padding: 0.5vh;
     }
+  
+  
   
 }

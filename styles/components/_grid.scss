@@ -47,11 +47,19 @@
 	width: 49.2%;
 }
 
+.span_2_of_2 {
+	width: 49.2%;
+}
+
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 480px) {
   
 	.span_1_of_2 {
+		width: 100%; 
+	}
+  
+  .span_2_of_2 {
 		width: 100%; 
 	}
 }
@@ -70,3 +78,4 @@
 		width: 100%; 
 	}
 }
+
