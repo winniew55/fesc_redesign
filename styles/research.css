@@ -62,7 +62,6 @@ aside {
   font-family: "Josefin Sans", sans-serif; }
   aside form {
     font-size: 3vh;
-<<<<<<< HEAD
     margin: 2rem;
     max-width: 90%; }
   aside img {
@@ -77,21 +76,6 @@ aside {
     background-color: #F0F0EF;
     margin-top: 1rem;
     padding: 0.5vh; }
-=======
-    margin: 2rem; }
-  aside img {
-    max-width: 100%;
-    height: auto; }
-  aside div[class^="col span_1_of_6"] {
-    border-style: solid;
-    border-color: #F0F0EF;
-    border-width: 0.1vh;
-    text-align: center;
-    border-radius: 1rem;
-    background-color: #F0F0EF;
-    margin-right: 0;
-    margin-top: 1rem; }
->>>>>>> gh-pages
 
 footer {
   background-color: #C68175;
@@ -164,7 +148,6 @@ footer {
 .span_1_of_2 {
   width: 49.2%; }
 
-<<<<<<< HEAD
 .span_2_of_2 {
   width: 49.2%; }
 
@@ -174,11 +157,6 @@ footer {
     width: 100%; }
 
   .span_2_of_2 {
-=======
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  .span_1_of_2 {
->>>>>>> gh-pages
     width: 100%; } }
 /*  GRID OF SIX  */
 .span_1_of_6 {

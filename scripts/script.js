@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", onDOMLoad)
 ////draw APL google production chart
 function getProductionData(){
   let request = new XMLHttpRequest()
-  let requestUrl = "http://api.eia.gov/series/?api_key=e4c19ff1670c5d3cf5302fd525d3964c&series_id=SEDS.REPRB.FL.A"
+  let requestUrl = "https://api.eia.gov/series/?api_key=e4c19ff1670c5d3cf5302fd525d3964c&series_id=SEDS.REPRB.FL.A"
   request.open('GET', requestUrl, true)
 
   request.onload = function(){
@@ -74,7 +74,7 @@ function getProductionData(){
 function getConsumptionData(){
   
 let request = new XMLHttpRequest()
-  let requestUrl = "http://api.eia.gov/series/?api_key=e4c19ff1670c5d3cf5302fd525d3964c&series_id=SEDS.TETCB.FL.A"
+  let requestUrl = "https://api.eia.gov/series/?api_key=e4c19ff1670c5d3cf5302fd525d3964c&series_id=SEDS.TETCB.FL.A"
   request.open('GET', requestUrl, true)
 
   request.onload = function(){
