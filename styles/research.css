@@ -101,9 +101,8 @@ footer {
       footer nav a:hover {
         background-color: #ffe9ec;
         color: #000000;
-        -webkit-transition: all 2s ease 0s;
-        transition: all 2s ease 0s;
-        text-decoration: none; }
+        text-decoration: none;
+        border-radius: 1rem; }
 
 /*  SECTIONS  */
 .section {
@@ -193,6 +192,7 @@ article .google {
   padding-left: 5vh;
   width: 80%;
   height: 100%;
-  min-height: 40vh; }
+  min-height: 60vh;
+  min-width: 60vh; }
 
 /*# sourceMappingURL=research.css.map */

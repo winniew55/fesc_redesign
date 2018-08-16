@@ -111,3 +111,28 @@ function drawConsumptionChart(freshConsumptionData) {
 var chart = new google.visualization.ColumnChart(document.getElementById('chart-consumption'));
         chart.draw(data, options);
 }
+
+//Vue.js for contact people
+
+var ContactPerson = [
+  {name: "Dr. David Norton",
+    position: "Interim Director",
+    email: "dpnorton@ufl.edu",
+    imgSource: "image/norton.png"
+  },{name: "Ms. Canan “Janan” Balaban",
+    position: "Associate Director",
+    email: "cbalaban@ufl.edu",
+    imgSource: "image/balaban.png" 
+  }
+]
+
+document.addEventListener("DOMContentLoaded", function(){
+  let profilelistings = new Vue({
+  el: '#profilelistings',
+  data: {
+    profiles:ContactPerson,
+  }
+})
+  
+  
+})
