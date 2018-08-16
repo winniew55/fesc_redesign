@@ -101,9 +101,8 @@ footer {
       footer nav a:hover {
         background-color: #ffe9ec;
         color: #000000;
-        -webkit-transition: all 2s ease 0s;
-        transition: all 2s ease 0s;
-        text-decoration: none; }
+        text-decoration: none;
+        border-radius: 1rem; }
 
 /*  SECTIONS  */
 .section {
@@ -185,18 +184,22 @@ article p {
   html {
     width: 100%; } }
 article .map {
-  width: 80%;
-  padding-left: 5vh; }
-article .person {
-  width: 60%;
-  padding-left: 10%; }
+  width: 80%; }
+article img {
+  width: 90%;
+  border-style: solid;
+  border-radius: 2rem;
+  padding: 2vh;
+  background-color: #B4AAA9;
+  margin: 2vh; }
 article form {
   text-align: center; }
 article textarea {
-  max-width: 70%; }
+  max-width: 100%; }
 article fieldset {
   width: 40%;
   margin: auto; }
-article .center {
-  padding-left: 5%; }
+article h4 {
+  text-align: center; }
+
 /*# sourceMappingURL=contact.css.map */

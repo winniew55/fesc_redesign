@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href=https://necolas.github.io/normalize.css/8.0.0/normalize.css>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif%7CNeuton%7CSlabo+27px" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="scripts/script.js"></script>
     <title>Contact Us</title>
   </head>
@@ -36,7 +38,9 @@
     <section>
       <div class="section group">
       <div class="col span_1_of_2">
-      <img class ="logo" src="image/fesc_logo.png" alt="logo">
+      <a href=index.html>
+          <img class ="logo" src="image/fesc_logo.png" alt="logo">
+          </a>
       </div>
       <div class="col span_1_of_2">
       <h1 class ="title">Florida Energy Systems Consortium</h1>
@@ -61,39 +65,45 @@
         <img class="map" src="image/map.png" alt="map">
           </div>
         </div>
-        <div class="section group">
+        <div id="profilelistings" class="filters">
+        <section class="profile-container">
+        <div class="profile container" v-for="profile in profiles">
+          <div class="section group">
         <div class="col span_1_of_2">
-        <h4>Dr. David Norton; Interim Director</h4>
-        <h4>Email: dpnorton@ufl.edu</h4>
-        <img class="person" src="image/norton.png" alt="interim">
+        <h4>{{profile.name}}</h4>
+        <h4>{{profile.position}}</h4>
+        <h4>{{profile.email}}</h4>
+            </div>
+            <div class="col span_1_of_2">
+        <img v-bind:src="profile.imgSource" alt="interim">
+            </div>
           </div>
-        <div class="col span_1_of_2">
-        <h4>Ms. Canan “Janan” Balaban; Associate Director</h4>
-        <h4>Email: cbalaban@ufl.edu</h4>
-        <img class="person" src="image/balaban.png" alt="associate">
           </div>
-        </div>
+          </section>
+          </div>
+        <div class="container">
         <h2>Feel free to contact us or leave us comment</h2>
         <form>
+        <div class="col-md-4 col-md-offset-4">
         <input type="text" name="name" id="name" required/>
         <label for="name"> Your Name</label>
         <br>
         <input type="email" name="email-address" id="email-address" required/>
         <label for="email">Email address</label>
         <br>
-        <fieldset>
-        <legend> Would you like to subscribe us?</legend>
+        <label for="subscribe"> Would you like to subscribe us?</label>
         <input type="radio" name="subscribe" value="yes" id="subscribe-yes" checked/>
         <label for="subscribe-yes">Yes</label>
         <input type="radio" name="subscribe" value="no" id="subscribe-no"/>
         <label for="subscribe-no">No</label>
-        </fieldset>
         <br>
         <textarea rows="10" cols="60" name="comments" id="comments">Type your comment here...</textarea>
         <label for ="comments">Comment</label>
         <br>
         <input type="submit" name ="submit" value="Answer" disabled/>
-        </form>
+            </div>
+          </form>
+          </div>
       </article>
            <aside>
         <div class="container-fluid">
